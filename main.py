@@ -149,7 +149,8 @@ class ReviewAPI(Resource):
 
 
 
-api.add_resource(ProductAPI, "/api/products/", "/api/products/<prod_id>/",ReviewAPI, "/api/reviews/", "/api/reviews/<review_id>")
+api.add_resource(ProductAPI, "/api/products/", "/api/products/<prod_id>/")
+api.add_resource(ReviewAPI, "/api/reviews/", "/api/reviews/<review_id>")
 
 
 if __name__ =="__name__":
